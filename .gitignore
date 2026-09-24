@@ -1,0 +1,10 @@
+bin/
+obj/
+dist/
+tests/**/bin/
+tests/**/obj/
+*.user
+client.yaml
+allowed_mods.yaml
+ServerGuard/
+BepInEx/
