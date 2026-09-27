@@ -1,6 +1,6 @@
 # Variant Chat
 
-A Valheim-style chat window with channel tabs, emojis, private messages and staff badges.
+A Valheim-style chat window with channel tabs, emojis, private messages and custom role badges.
 
 ## Install
 
@@ -24,17 +24,27 @@ Press **Enter**, choose a channel and type. Local, Shout, Whisper and DM are inc
 
 Server admins can also change the shared window size, chat title and channel colors. Admin controls are hidden from other players.
 
-## Staff badges
+## Display roles
 
-Open **Style → Badges → Assign player**, select a player, choose **Owner**, **Admin**, **Moderator** or **No badge**, then click **Apply to [name]**.
+Open **Style → Badges → Assign player**, select a player, open the badge selector and choose **Owner**, **Admin**, **Moderator**, **Viking**, a custom role or **No badge**. Click **Apply to [name]**. Scroll the selector to see more roles.
 
 Only the selected SteamID changes. Everyone using Variant Chat sees the badge before that player's name, such as **Owner-Dova**. Assignments save on the server and survive restarts.
 
-**Labels & colors** changes how each role looks. **Role status** shows which players have matched the server's lists.
+**Viking** starts green. **Labels & colors** changes each role's name, color and visibility. Admins can use **+ Add role** to create up to eight custom roles, then click **Save role settings**. **Role status** shows which players have matched the server's lists.
 
-Badges are cosmetic. Editing them requires existing Valheim server-admin access or being the local host. Assigning an Admin badge does not grant powers or change ServerGuard permissions.
+Only Valheim server admins and the local host can create or edit roles and assign them to other players. Badges are cosmetic: an Owner, Admin or Moderator badge grants no powers and does not change ServerGuard permissions. Each player has one display badge.
 
-Settings are stored in `BepInEx/config/Variant Chat/`. The server also creates `owners.txt`, `admins.txt` and `moderators.txt`. You can edit these directly using one SteamID64 per line, with an optional `# name` comment. This also works for offline players. Save to reload; Owner takes priority over Admin, then Moderator.
+### Public and hidden roles
+
+Players click **Roles**, beside **Style**, to choose a public role or **No badge**. This changes only their own badge and saves on the server.
+
+Admins open **Style → Badges → Labels & colors**, choose a role with the arrows, and click its visibility button to switch between **Public** and **Hidden**. Click **Save role settings** to apply it. Public roles appear in the player menu; hidden roles remain available for admin assignment. Every role starts hidden until you make it public, including Viking and new custom roles.
+
+Hiding a role removes it from the player menu immediately. It does not remove badges already assigned to players. Use **Assign player** to change or remove those badges. Role creation and visibility controls remain admin-only.
+
+Settings are stored in `BepInEx/config/Variant Chat/`. The server creates `owners.txt`, `admins.txt`, `moderators.txt`, `vikings.txt` and `custom1.txt` through `custom8.txt`. You can edit these directly using one SteamID64 per line, with an optional `# name` comment. This also works for offline players. Save to reload. If an account appears in several lists, priority is Owner, Admin, Moderator, Viking, then custom roles in slot order.
+
+Custom role names, colors and Public settings are saved in the server config under **Badges**. An empty custom label disables that role while retaining its saved assignments. Use 1.0.5 or later on the server and clients for player role selection. Older clients keep the badges their version supports.
 
 ## Compatibility
 

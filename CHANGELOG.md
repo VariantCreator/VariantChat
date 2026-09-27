@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.5
+
+- Added Roles beside Style so players can choose their own public badge.
+- Admins can set each role to Public or Hidden. Roles start hidden until an admin makes them public.
+- Player choices save on the server. Hidden roles stay available for admin assignment.
+
+## 1.0.4
+
+- Added a green Viking badge and up to eight custom display roles with their own names and colors.
+- Server admins can create roles and assign them through the chat window. Badges grant no permissions.
+- Added a scrollable role selector. Existing staff badges and saved assignments carry over.
+
 ## 1.0.3
 
 - Admins can assign or remove one player's badge in game. Changes save on the server and show for everyone.
