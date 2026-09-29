@@ -1,6 +1,6 @@
 {
   "name": "VariantChat",
-  "version_number": "1.0.5",
+  "version_number": "1.0.6",
   "website_url": "https://github.com/VariantCreator/VariantChat",
   "description": "Chat tabs, emojis, private messages and custom role badges for Valheim.",
   "dependencies": ["denikson-BepInExPack_Valheim-5.4.2350"]

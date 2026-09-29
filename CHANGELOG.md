@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6
+
+- Added a notification volume slider and sound preview.
+- Server admins can sync volume for everyone or let players choose their own level. Sound On/Off stays personal.
+
 ## 1.0.5
 
 - Added Roles beside Style so players can choose their own public badge.
