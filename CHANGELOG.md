@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.7
+
+- Fixed mention detection and added player suggestions when typing @.
+- Drafts now stay with each channel and DM.
+- Added separate DM and mention sounds, with 15-minute and one-hour pauses.
+- Added a personal text size slider and search for recent session chat.
+
 ## 1.0.6
 
 - Added a notification volume slider and sound preview.

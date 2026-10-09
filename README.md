@@ -1,49 +1,74 @@
-# Variant Chat
+# 💬 Variant Chat
 
-Chat tabs, emojis, private messages and role badges for Valheim.
+### Channels, DMs and badges for your Valheim server.
 
-## Install
+Keep conversations organised with chat tabs, emojis, private messages and role badges. Move chat where you want it, choose your own style and mute players when needed.
 
-Requires **BepInExPack Valheim 5.4.2350** or later.
+## ✨ Make yourself heard
 
-[Download the latest release](https://github.com/VariantCreator/VariantChat/releases/latest). Close Valheim and copy `plugins/VariantChat` from the ZIP into `BepInEx/plugins/`.
+- **💬 Channel tabs** — Local, Shout, Whisper and DM.
+- **✉️ Private messages** — Click a player’s name to start a DM. Unread messages flash the DM tab.
+- **😊 Emojis & mentions** — Use the smile button, or type `@` to choose an online player.
+- **🛡️ Role badges** — Show a public role or a badge assigned by an admin.
+- **📌 Movable chat** — Drag the title bar, pin chat open and scroll through older messages.
 
-Install the same version on the server and clients. Both players need the mod for DMs. Keep your config files when updating.
+**Party** chat requires **Groups**. **Guild** chat requires **Guilds**.
 
-## Chat
+## 📦 Install
 
-Press **Enter**, choose a channel and type. Local, Shout, Whisper and DM are included. Party needs Groups; Guild needs Guilds.
+Requires **BepInExPack Valheim 5.4.2350 or later**.
 
-- Click the smile button for emojis, or a player's name to DM, mention or mute them.
-- Mention someone with `@Name` or `@"Long Name"`. Unread DMs flash the DM tab.
-- Scroll up to read older messages. **Jump to latest** resumes auto-scroll.
-- Drag the title bar to move chat. **Pin** keeps it visible.
+[📥 Download the latest release](https://github.com/VariantCreator/VariantChat/releases/latest)
 
-## Settings
+Close Valheim, then copy `plugins/VariantChat` from the ZIP into `BepInEx/plugins/`.
 
-**Style** has personal opacity, sound and mute controls. Admins reach these through **Personal**.
+**Install the same version on the server and clients.** Both players need Variant Chat to use DMs. Keep your config files when updating.
 
-Open **Notification volume** for the 0–100% slider and **Preview sound**. Server volume sync starts on: admins choose the shared level, or turn sync off so players can choose their own. Sound On/Off always stays personal.
+## 🚀 Get chatting
 
-Server admins can also change the shared size, title and channel colors.
+Press **Enter**, choose a channel and type.
 
-## Roles
+- Click the **smile button** to pick an emoji.
+- Click a **player’s name** to DM, mention or mute them.
+- For mentions, type **@**, use **↑ / ↓** to choose and **Tab** to complete, or click a suggestion. Names with spaces use `@"Long Name"`.
+- Drafts stay with each channel and DM while chat is open or closed.
+- Click **Search** to find a player or phrase in the current tab’s recent chat. Search lasts for this session; no chat logs are saved.
+- Scroll up to read older messages. **Jump to latest** returns to live chat and resumes auto-scroll.
+- Drag the title bar to move the window. **Pin** keeps it visible.
 
-Click **Roles**, beside Style, to choose a public role or **No badge**. Viking starts green; there are eight custom role slots.
+## 🎨 Choose your style
 
-Server admins and the local host manage roles under **Style → Badges**:
+Open **Style** for text size, opacity, sound and mute controls. Admins find their personal settings under **Personal**.
 
-- **Assign player:** choose a player and badge, then click **Apply to [name]**.
-- **Labels & colors:** change a role's name, color and Public/Hidden setting, or use **+ Add role**. Click **Save role settings**.
+**Sound settings** has separate **DM** and **mention** switches, a **0–100% volume slider** and **Preview sound**. Pause alerts for **15 minutes** or **1 hour**, then resume whenever you want.
 
-All roles start **Hidden**. Public roles appear in the player menu; hidden roles are available for admin assignment. Hiding a role keeps badges already assigned. Only admins can create or edit roles or assign them to other players. Badges grant no permissions.
+Volume sync is enabled by default. Admins can set a shared level or turn sync off so players can choose their own. **Sound switches and pauses stay personal.**
 
-## Config and compatibility
+Server admins can also set the shared chat size, title and channel colours.
 
-Settings and role lists are in `BepInEx/config/Variant Chat/`. Role lists accept one SteamID64 per line, including offline players.
+## 🛡️ Roles & badges
 
-Built for Valheim **1.0.15** on Windows with keyboard and mouse. Groups, Guilds and BetterChat are optional. Avoid another chat UI replacement alongside it.
+Click **Roles**, beside Style, to choose a public role or **No badge**. Viking starts green, and eight custom role slots are available.
 
-## Credits
+Admins and the local host manage badges under **Style → Badges**:
 
-Code: MIT. [Twemoji](https://github.com/jdecked/twemoji) artwork is CC BY 4.0. Attribution and licenses are in `licenses/`.
+- **Assign player** — Choose a player and badge, then click **Apply to [name]**.
+- **Labels & colours** — Edit a role’s name, colour and Public/Hidden setting, or use **+ Add role**. Finish with **Save role settings**.
+
+All roles start **Hidden**. Public roles appear in the player menu; hidden roles are available for admin assignment. Hiding a role keeps badges already assigned.
+
+**Only admins can create or edit roles and assign badges to other players. Badges do not grant permissions.**
+
+## 🧩 Config & compatibility
+
+Settings and role lists are stored in `BepInEx/config/Variant Chat/`. Role lists accept **one SteamID64 per line**, including offline players.
+
+Built for **Valheim 1.0.15 on Windows**, using keyboard and mouse.
+
+**Groups, Guilds and BetterChat are optional.** Avoid running another chat UI replacement alongside Variant Chat.
+
+---
+
+### 📜 Credits
+
+Code is licensed under **MIT**. [Twemoji](https://github.com/jdecked/twemoji) artwork is **CC BY 4.0**. Attribution and licenses are included in `licenses/`.

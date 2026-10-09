@@ -1,8 +1,10 @@
-# Variant Chat 1.0.6
+# Variant Chat 1.0.7
 
 Chat tabs, emojis, private messages and role badges for Valheim.
 
-Use Style for personal opacity, sound and mute controls. Notification volume has a slider and preview. Admins can sync volume; each player keeps their own sound On/Off choice.
+Type @ to choose an online player. Drafts stay with each channel and DM. Search finds players or phrases in recent session chat.
+
+Use Style for text size, opacity and sound settings. DM and mention sounds have separate switches, with a timed pause. Admins can sync notification volume; sound choices stay personal.
 
 Use Roles beside Style to choose a public badge. Server admins and the local host create roles and choose which are Public or Hidden. Includes a green Viking badge and eight custom role slots. Badges grant no permissions.
 
